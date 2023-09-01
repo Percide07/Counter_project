@@ -11,20 +11,21 @@ minus.addEventListener('click',function(){
     // screen.append(myValue-=1);
     if (screen.innerText < 0) {
         screen.style.color = 'red';
-    } else {
-        screen.style.color = 'green';
+    } 
+    else if (screen.innerText <= 0) {
+        screen.style.color = 'black';
     }
 })       
 rest.addEventListener('click',function(){
     screen.innerHTML = 0;
-    screen.style.color = 'green';
+    screen.style.color = 'black';
 }) 
 plus.addEventListener('click',function(){
     screen.innerText = Number(screen.innerText) +1;
-    if (screen.innerText >= 0) {
+    if (screen.innerText > 0) {
         screen.style.color = 'green';
-    } else {
-        screen.style.color = 'red';
+    } 
+    else if (screen.innerText >= 0) {
+        screen.style.color = 'black';
     }
-
 }) 
