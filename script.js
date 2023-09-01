@@ -9,11 +9,22 @@ const screen = document.querySelector('#screen');
 minus.addEventListener('click',function(){
     screen.innerText = screen.innerText -1;
     // screen.append(myValue-=1);
+    if (screen.innerText < 0) {
+        screen.style.color = 'red';
+    } else {
+        screen.style.color = 'green';
+    }
 })       
 rest.addEventListener('click',function(){
     screen.innerHTML = 0;
-    
+    screen.style.color = 'green';
 }) 
 plus.addEventListener('click',function(){
     screen.innerText = Number(screen.innerText) +1;
+    if (screen.innerText >= 0) {
+        screen.style.color = 'green';
+    } else {
+        screen.style.color = 'red';
+    }
+
 }) 
