@@ -47,5 +47,13 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 50px;
-
+}
+.add1{
+    color: red;
+}
+.add2{
+    color: black;
+}
+.add3{
+    color: green;
 }
